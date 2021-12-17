@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		/*1)*  it will apply mentioned properties on all tags*/
+
+*
+{
+	margin:0 auto;
+}
+div
+{
+	width:600px;
+	background-color: yellow;
+}
+/*2), to apply properties on more than one tag
+*/
+h2,h1
+{
+	color:blue;
+}
+body
+{
+	background-color: lightgrey;
+
+}
+:root
+{
+background-color: pink;
+}
+/*3)use Class or Id to apply on specified tags
+*/
+
+/*combination selector
+1. space	2. >	3. +	4. ~
+space and > is for calling child
++ and ~ is for calling siblings  */
+
+/*use of space- it will call all childs whether direct or at any other level  means grand child*/
+div h2
+{
+	background-color: aqua;
+
+}
+
+/*5) >- It will also apply  properties on  childs of a parent tag but only on its direct childs not grandchilds
+*/
+div div h2
+{
+	border:5px green solid;
+	color:red;
+
+}
+div>div>h2
+{
+	background-color: teal;
+}
+
+/*6) ~ it will apply properties on all sibblings of a specified tag*/
+div~h2
+{
+	width:400px;
+}
+/* use of + means to apply css on all adjacent siblings(means real not on  cousins) */
+div+h2
+{
+	font-size: 40px;
+
+}
+
+
+	</style>
+</head>
+<body>
+<h1 align=center> Combination Selectors </h1>
+<pre>
+	combination Selectors-
+1)Space
+2)>
+3)+
+4)~
+
+space and > are used with child elements of a parent tag
++ and ~ are used with sibblings of any specified tag
+</pre>
+<hr>
+<h2>I am heading2</h2>
+<div>
+	<p> paragraph. The quick brown fox jumps over the little lazy dog.The quick brown fox jumps over the little lazy dogThe quick brown fox jumps over the little lazy dogThe quick brown fox jumps over the little lazy dogThe quick brown fox jumps over the little lazy dogThe quick brown fox jumps over the little lazy dog
+</p>
+
+	<h2>I am heading2</h2>
+	<div>
+		I am Ist level child of div
+		<h2>I am heading2</h2>
+	</div>
+	<div>
+		i am 2nd level child of above div. 
+			<h2>I am heading2</h2>
+		</div>
+		<p> Another Para.dog.The quick brown fox jumps over the little lazy dogThe quick brown fox jumps over dog.The quick brown fox jumps over the little lazy dogThe quick brown fox jumps over </p>
+
+<h2>I am heading2</h2>
+
+</div>
+<h2>I am heading2</h2>
+
+p> Another Para.dog.The quick brown fox jumps over the little lazy dogThe quick brown fox jumps over dog.The quick brown fox jumps over the little lazy dogThe quick brown fox jumps over </p>
+
+<h2>I am heading2</h2>
+
+</body>
+</html>
+
+
+

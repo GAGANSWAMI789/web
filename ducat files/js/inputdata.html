@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		div
+		{
+			width:200px;
+			border:2px red solid;
+			background-color: yellow;
+			text-align: center;
+		}
+
+	</style>
+</head>
+<body>
+<h2 align=center> How to take input from user</h2>
+<div id=ddd>
+I will display sum of numbers
+</div>
+<button onclick="document.getElementById('ddd').innerHTML=n1+n2;
+" ondblclick="document.getElementById('ddd').innerHTML=x"> Click me to see Sum</button>
+<hr>
+<br>
+
+// Assignment-
+// 1. Input Name and marks in 3 subjects of a student. calculate Total and Percentage and then display in a table
+//2. Input Employee name, Post and salary. Calculate 
+//Tax=10% of salary
+// and Net salary=total-tax
+// Now display all info. in a list
+//3. Input login details of an user like username and password and display in a form.
+
+//Use Required CSS in above all questions
+<hr>
+<script type="text/javascript">
+var na,ag;      //to declare variable to store any information	
+na="Ram";
+ag=40;
+// prompt --used to take input from user but it will take as text type. So you have to convert the value from text into number. Use parseInt(), parseFloat(),eval etc.
+//prompt is used to take input from user
+	// The parseInt() function parses a string and returns an integer.
+// The parseFloat() function parses a string and returns a floating point number.
+// The eval() function evaluates or executes an argument.
+
+// If the argument is an expression, eval() evaluates the expression. If the argument is one or more JavaScript statements, eval() executes the statements.
+na=prompt("Enter Name:");
+ag=prompt("Enter Age:");
+document.write("<br>Name:",na);
+document.write("<br>Age:",ag);
+// Input 2 numbers and display sum of them in the body in a div
+var n1,n2;
+// n1=parseInt(prompt("Enter First Number:"));
+// n2=parseInt(prompt("Enter Second Number:"));
+// n1=parseFloat(prompt("Enter First Number:"));
+// n2=parseFloat(prompt("Enter Second Number:"));
+n1=eval(prompt("Enter First Number:"));
+n2=eval(prompt("Enter Second Number:"));
+// document.write("<br>Sum:",n1+n2);
+// document.getElementById("ddd").innerHTML=n1+n2;
+
+
+
+
+var x=document.getElementById("ddd").innerHTML;
+
+
+</script>
+
+
+
+</body>
+</html>

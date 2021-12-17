@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<pre>
+Assignments-
+1)Show, hide ---password
+2)use button onclick to show signup form
+3)Change Background and foreground color of the body
+4)Convert Currency 
+
+
+
+</pre>
+
+
+<p id=ppp> My Name</p> 
+Name:<input type=text id=ttt> 
+<br>
+<button onclick="hello()">Click me</button>
+<script type="text/javascript">
+	
+function hello()
+{
+
+var x=document.getElementById("ttt").value;
+var y=document.getElementById("ppp");
+y.style.backgroundColor="pink";
+y.style.color="blue";
+y.style.width="300px";
+
+if(x=="")
+{
+	alert("Please fill name");
+}
+document.getElementById("ppp").innerHTML=x;
+
+}
+
+
+</script>
+
+
+
+
+
+
+
+
+
+</body>
+</html>

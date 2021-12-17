@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>product Name</title>
+</head>
+<body>
+<ol>
+	<li id="a"></li>
+	<li id="b"></li>
+	<li id="c"></li>
+	<li id="d"></li>
+	
+</ol>
+<script type="text/javascript">
+	var s1,s2,s3,s4;
+	s1=prompt("Enter product name");
+    s2=parseFloat(prompt("Enter price "));
+    s3=parseInt(prompt("Enter quantity"));
+
+    document.getElementById("a").innerHTML=s1;
+     document.getElementById("b").innerHTML=s2;   
+    document.getElementById("c").innerHTML=s3;
+    if (s3>=10) {
+    	s4=s3*s2-(s3*s2)*(12/100);
+    }
+    else
+    {
+    	s4=s3*s2;
+    }
+        document.getElementById("d").innerHTML=s4;
+
+</script>
+</body>
+</html>

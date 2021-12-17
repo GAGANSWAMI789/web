@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<div id="aa">
+		<h1 align="center">Calculate two digit number</h1>
+	</div>
+<script type="text/javascript">
+	var s1,s2,s3,result;
+	s1=parseFloat(prompt("Enter first number"));
+		s2=parseFloat(prompt("Enter second number"));
+		s3=prompt("Enter a operator('+,-,%,/,*')");
+
+switch (s3)
+{
+	case '+':document.write("<h2 align=center>Add</h2>",s1+s2);
+	break;
+	case '-':document.write("<h2 align=center>Subtraction</h2>",s1-s2);
+	break;
+	case '*':document.write("<h2 align=center>Multiply</h2>",s1*s2);
+	break;
+	case '/':document.write("<h2 align=center>Divide</h2>",s1/s2);
+	break;
+	case '%':document.write("<h2 align=center>Reminder</h2>",s1%s2);
+	break;
+	default:document.write("error");
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+// Data types are the main building blocks of any computer language. These are basically the formats 
+//to store data in the form of variables.JavaScript is a dynamic type language, means you don't need 
+//to specify type of the variable because it is dynamically used by JavaScript engine. You need to use
+//var here to specify the data type. It can hold any type of values such as numbers, strings etc. For
+//example:
+var a=40;//holding number  
+var b="Rahul";//holding string  
+//You can declare many variables in one statement.
+var a=40, b="Ram",c=70;
+//If you re-declare a JavaScript variable, it will not lose its value.
+
+//The variable carName will still have the value "Volvo" after the execution of these statements
+
+var carName = "Volvo";
+var carName;		//carname will have volvo
+//JavaScript identifiers (names) must begin with:A letter (A-Z or a-z),A dollar sign ($),Or an
+//underscore (_)
+
+// There are 7 data types in JavaScript which can be broadly classified into 2 groups:
+
+// Primitive: A primitive data value is a single simple data value with no additional properties and 
+//methods.JavaScript has dynamic types.This includes 6 of the data-types:
+
+// 1.Boolean
+// 2.Null
+// 3.Undefined
+// 4.Number
+// 5.String
+// 6.Symbol (ECMAScript 6)-This data-type is new to JavaScript. Symbol is unique and immutable pritive
+// value which might be used as key of an Object Property.
+
+// Non-Primitive: 
+// 1.Object	represents instance through which we can access members
+// 2.Array	represents group of similar values
+// 3.RegExp	represents regular expression
+// Object-Objects are data types representing the real world entities. They have data in the form of 
+//key-value pair.Objects are at the very core of JavaScript. An object is an entity in JavaScript which
+// often resembles real-world things or objects. For example, an object named myCar can have properties
+//representing inherent characteristics such as -- color, weight, height and also other real-world 
+//characteristics such as -- Brand, Model, etc.Every object has a collection of properties and property-values.
+// if use strict then it will not allow any variable directly without declaration
+"use strict";        
+
+	var x,y,z;			// declaration of all
+	x=80;			// Defining x is number
+	y="ducat";     //Defining y is string    but z is undefined
+	c="hello"; //can use any variable without declaration but if not using strict mode
+	document.write("<br>data type of x:",typeof(x));
+document.write("<br> data type of y:",typeof(y));
+x=null;      // x is null type
+document.write("<br>data type of x:",typeof(x));
+document.write("<br>data type of z:",typeof(z));
+z=["ram",23,"clerk"];   //array
+// Array is a collection of more than one type of information stored in a single variable,
+// but position number starts from 0.  array is also an object type
+
+
+document.write("<br>data type of z:",typeof(z));
+
+document.write("<br>Name of Employee:",z[0]);
+document.write("<br>Age of Employee:",z[1]);
+document.write("<br>Post of Employee:",z[2]);
+document.write("<br>Details of Employee:",z);
+//y is an object. Every object has property and method
+y={
+emp_name:"Ram",					//property
+emp_post:"clerk",				//property
+emp_sal:37000,					//property
+job_details:function(){								//method of y
+	return "He is the best and do accounts work";
+}
+
+}
+
+
+document.write("<br>Name:",y.emp_name);
+document.write("<br>Post:",y.emp_post);
+document.write("<br>Salary:",y.emp_sal);
+document.write("<br>Work of Employee:",y.job_details());
+// z is an object by below defination 
+z={
+	name:"Deepa",			//property of z object
+	ag:27,					//property of z object
+	post:"accountant",		//property of z object
+	sal:34000,				//property of z object
+	work:function(){
+	return "only works in sales department";
+	}   //work is method of z object	
+};
+// without name function is called annonymous fn.
+document.write("<br>data type of z:",typeof(z));
+
+document.write("<br>Name of Employee:",z.name,z.ag,z.post);
+delete z.post;
+document.write("<br>Name of Employee:",z.name,z.ag,z.post);
+
+document.write("<br>Age of Employee:",z.ag);
+document.write("<br>Post of Employee:",z.post);
+document.write("<br>Salary of Employee:",z.sal);
+document.write("<br>Area of Employee:",z.work());
+document.write("<br>Details of Employee:",z);
+  var a = 20;
+    var b = a;
+    a=50;
+    console.log(b);
+
+    var x = {value:100}
+    var y = x;
+    x.value=150;
+    console.log(y.value);
+
+</script>
+
+
+</body>
+</html>

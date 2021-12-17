@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<style>
+*
+{
+	margin:0 auto;
+	padding:0;
+}
+
+div,div>section,div>section>img
+{
+	height:500px;
+}
+div
+{
+	width:100%;
+	overflow: hidden;
+}
+div>section
+{
+	width:500%;
+		position: relative;
+	animation:soni 4s linear infinite alternate;
+}
+div>section>img
+{
+	width: 20%;
+	float:left;
+
+}
+
+@keyframes soni
+{
+	0%{left:0%}
+	10%{left:0%}
+	20%{left:-100%}
+	30%{left:-100%}
+	40%{left:-200%}
+	50%{left:-200%}
+	60%{left:-300%}
+	70%{left:-300%}
+	80%{left:-400%}
+	90%{left:-400%}
+	/*100%{left:-450%}*/
+}
+
+
+</style>
+</head>
+<body>
+
+
+
+<div>
+	<section>
+		
+<img src="1.jpg">
+<img src="2.jpg">
+<img src="3.jpg">
+<img src="4.jpg">
+<img src="5.jpg">
+<img src="6.jpg">
+
+
+	</section>
+
+</div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+
+
+
+</head>
+<body>
+
+
+<pre>
+To check condition---
+	1)if else
+	2)switch case
+
+
+Loop-Iteration----repeat any task upto spaceified number of times or untill  any condition is satisfied
+
+1)for loop
+	1)basic loop
+		for(initialization of var;condition;updation(increment/decrement))
+		{
+
+		}
+
+	2)for in
+	3)for each
+	4)for of
+2)while loop
+
+	Initialization
+	while(condition)
+	{
+		Increment/decrement
+	}
+
+3)do while loop
+
+
+	Initialization 
+	do
+	{
+		Increment/decrement
+	}while(condition);
+// In while loop & do while- initialization and increment/decrement must be done. difference between while and do while is that while can't execute the loop unless condition is not satisfied at the very beginning. but do while give permission to execute the loop at least once although the given condition is not satisfied.
+_____________________________________
+
+</pre>
+
+<pre>
+	// Practice questions
+// 1. Print series
+
+// (a)5,10........100
+// (b)100,97,.......3
+// (c)1,4,9,.......100
+// (d)1,8,27.......1000
+// (e)0,1,1,2,3,5.........200
+
+// 2. Input any number from user and display it's table-
+// 	eg. 9
+// 	9X1=9
+// 	9X2=18
+// 	...
+// 	...
+// 	9X10=90
+</pre>
+
+
+
+<script type="text/javascript">
+	// input any name and display 5 times
+
+var n=prompt("Enter Name:");
+var c;			//declare
+
+document.write("<h1>For loop</h1>");
+
+for(c=1;c<=5;c=c+1)
+{
+	document.write("<br>Name:",n);
+}
+
+//-------------------------------------------------
+
+document.write("<h1>While loop</h1>");
+c=1;
+while(c<=5)
+{
+document.write("<br>Name:",n);	
+c=c+1;
+
+}
+
+//-------------------------------------------------
+document.write("<h1>do While loop</h1>");
+c=1;
+do
+{
+document.write("<br>Name:",n);	
+c=c+1;
+
+}while(c<=5);
+//-------------------------------------
+//input any name and display if user say yes
+document.write("<h1> While loop--input any name and display if user say yes</h1>");
+
+var a=prompt("Enter Name:");
+var ans;			//declare
+
+ans="y";		//initialization
+while(ans=="y")
+
+{
+	document.write("<br>Name:",n);
+	ans=prompt("Want to Continue(y/n):");
+
+}
+
+
+</script>
+
+</body>
+</html>

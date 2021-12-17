@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+</head>
+<body>
+
+    <button onclick="theora()">SignUp</button>
+    <fieldset id="ppp" style="text-align: center; width:30%; margin:0 auto;opacity: 0; ">
+        <P style="font-size: x-large;">Sign Up</P>
+   
+    <form>
+        <input type="text" placeholder="Name"><br><br>
+        <input type="email" placeholder="Email"><br><br>
+        <input type="text" placeholder="Address"><br><br>
+        <input type="text" placeholder="Number"><br><br>
+        <input type="password" placeholder="Password"><br><br>
+        <input type="text" placeholder="Zip Code"><br><br>
+        <input type="submit" value="SignUp">
+        
+
+    </form>
+</fieldset>
+
+<script>
+
+    function theora()
+    {
+        var y=document.getElementById("ppp");
+        y.style.opacity= 1;
+        document.getElementById("ppp").innerHTML=y;
+    }
+</script>
+</body>
+</html>

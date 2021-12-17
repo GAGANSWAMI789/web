@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	
+	<style>
+		/*@import "style2.css";*/
+		*
+{
+	margin:0 auto;
+	padding:;
+}
+
+:root   /*same as body but there is also some difference*/
+{
+	background-color:red;
+
+}
+.one
+{
+	font-size:50px !important;
+	word-spacing:20px;
+	letter-spacing: 10px;
+	color:yellow !important;
+}
+.two
+{
+	color:green;
+	text-align:center;
+}
+
+div
+{
+	width:1200px;
+	height:300px;
+	display: flex;
+	font-size:20px;
+	color:white;
+	text-align:center;
+}
+div>section
+{
+	flex:1;
+	border:2px solid gray;
+	overflow:auto;
+}
+
+
+
+/*----------------------------------------------------------------------*/
+
+@media(max-width:1350px)
+{
+	:root{
+		background-color:blue;
+	}
+	div
+	{
+		width:100%;
+	}
+}
+/*-----------------------------------------------------------------------*/
+
+@media(max-width:900px)
+{
+	:root{
+		background-color:green;
+	}
+	.one
+	{
+		font-size:20px;
+		word-spacing:0px;
+		letter-spacing:0px;
+		text-transform: uppercase;
+		text-align: left;
+		color:purple;
+	}
+	.box3,.box4
+	{
+		display: none;
+	}
+}
+
+/*-------------------------------------------------------------------*/
+@media(max-width:600px)
+{
+	:root{
+		background-color:pink;
+
+	}
+	.one
+	{
+		font-size:20px;
+		word-spacing:0px;
+		letter-spacing:0px;
+		text-transform: uppercase;
+		text-align: left;
+	}
+	div,.box3,.box4
+	{
+		display: block;
+	}
+	div>section
+	{
+		width:100%;
+		min-height:200px;
+		max-height:auto;
+		overflow:scroll;
+		box-sizing: border-box;
+		color:black;
+	}
+	
+}
+
+
+	</style>
+</head>
+<body>
+	
+	<h1 class="one two">Ducat,Noida</h1>
+	<div>
+		<section class="box1">@media only screen and (max-width: 600px) and (min-width: 400px) {...} The query above will trigger only for screens that are 600-400px wide. This can be used to target specific devices with known widths.</section>
+		<section class="box2">@media only screen and (max-width: 600px) and (min-width: 400px) {...} The query above will trigger only for screens that are 600-400px wide. This can be used to target specific devices with known widths.</section>
+		<section class="box3">@media only screen and (max-width: 600px) and (min-width: 400px) {...} The query above will trigger only for screens that are 600-400px wide. This can be used to target specific devices with known widths.</section>
+		<section class="box4">@media only screen and (max-width: 600px) and (min-width: 400px) {...} The query above will trigger only for screens that are 600-400px wide. This can be used to target specific devices with known widths.@media only screen and (max-width: 600px) and (min-width: 400px) {...} The query above will trigger only for screens that are 600-400px wide. This can be used to target specific devices with known widths.be used to target specific devices with known widths.@media only screen and (max-width: 600px) and (min-width: 400px) {...} The query above will trigger only for screens that are 600-400px wide. This can be used to target specific devices with known widths.be used to target specific devices with known widths.@media only screen and (max-width: 600px) and (min-width: 400px) {...} The query above will trigger only for screens that argtyhe 600-400px wide. This can be used to target specific devices with known widths.be used to target specific devices with known widths.@media only screen and (max-width: 600px) and (min-width: 400px) {...} The query above will trigger only for screens that are 600-400px wide. This can be used to target specific devices with known widths.be used to target specific devices with known widths.@media only screen and (max-width: 600px) and (min-width: 400px) {...} The query above will trigger only for screens that are 600-400px wide. This can be used to target specific devices with known widths.be used to target specific devices with known widths.@media only screen and (max-width: 600px) and (min-width: 400px) {...} The query above will trigger only for screens that are 600-400px wide. This can be used to target specific devices with known widths.</section>
+	</div>
+
+</body>
+</html>

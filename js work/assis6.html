@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>people
+		
+	</title>
+	<style type="text/css">
+		#senior{
+			width: 40%;
+			border: 1px solid black;
+			box-shadow: 1px 1px 5px black;
+			margin: 0 auto;
+			font-size: 40px;
+			text-align: center;
+			background-color: white;
+		}
+	</style>
+</head>
+<body bgcolor="lightgrey">
+
+<h1 align="center">Win 1 &#8377; if you are senior citizen</h1>
+<div id="senior"></div>
+
+
+<script type="text/javascript">
+	var s1,s2;
+	s1=parseInt(prompt("Enter your Name"));
+	s2=parseInt(prompt("Enter your Age"));
+
+	if (s2>=60) {
+document.getElementById("senior").innerHTML=("Congrates!!!!!<br>You are a senior citizen and eligible for vote<br>&#10084;");
+	}
+	else {
+document.getElementById("senior").innerHTML=("Ooooooppppppsssssss.....<br>You are not a senior citizen and not eligible for vote<br>&#128546;")
+	}
+
+
+</script>
+</body>
+</html>

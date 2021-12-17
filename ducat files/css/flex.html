@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<style type="text/css">
+	.cc
+	{
+		background-color: lightgrey;
+		border:1px red solid;
+		width:50px;
+		height:80px;
+		/*line-height: 200px;*/
+		text-align: center;
+		margin-left: 10px;
+	}
+.pp
+{
+display:flex;
+flex-direction: row-reverse;
+flex-wrap: wrap;
+/*shorthand property of flex-direction and flex-wrap*/
+flex-flow: row wrap;
+/*horizontal alignment. values are center, flex-end,flex-start,space-between,space-around*/
+justify-content:center;
+/*vertical alignment The align-content property is used to align the flex lines.values are center, flex-end,flex-start,space-between,space-around*/
+align-content:space-between; 
+/*The "align-items: stretch;" stretches the flex items to fill the container (this is default). The align-items property is used to align the flex items vertically.
+*/
+align-items: stretch;
+width:1200px;
+height: 500px;
+background-color: yellow;
+
+border:5px red solid;
+	/*inner shadow*/
+		box-shadow:inset 0 0 40px red;
+/*box-shadow: 0 0 0 10px blue;*/
+
+	
+	 /*multi border*/
+		box-shadow:0 0 0 5px red,0 0 0 15px green,0 0 0 25px blue;*/
+
+font-size:30px;
+}
+/*The flex property is a shorthand property for:
+
+flex-grow
+flex-shrink
+flex-basis
+The flex property sets the flexible length on flexible items.*/
+
+.cc:last-child,.cc:first-child
+{
+
+	flex:2;
+}
+
+.cc:nth-child(4)
+{
+	flex:3;
+}
+
+</style>
+
+
+
+</head>
+<body>
+	<pre>
+		Flex and grid are values of display property
+
+Flex-flexible
+Before the Flexbox Layout module, there were four layout modes:
+Block, for sections in a webpage
+Inline, for text
+Table, for two-dimensional table data
+Positioned, for explicit position of an element
+The Flexible Box Layout Module, makes it easier to design flexible responsive layout structure without using float or positioning.
+Before flex, any element can be adjusted at its required place by position, top,left,margin etc. properties.
+Flex is one-dimensional means display elements either in row or column but give this property to parent of many childs.
+</pre>
+<br>
+<div class=pp>
+<div class=cc>A</div>
+<div class=cc>B</div>
+<div class=cc >C</div>
+<div class=cc>D</div>
+<div class=cc>E</div>
+<div class=cc >F</div>
+<div class=cc>A</div>
+<!--
+<div class=cc>B</div>
+<div class=cc>A</div>
+<div class=cc>B</div>
+<div class=cc>A</div>
+<div class=cc>B</div>
+<div class=cc>A</div>
+<div class=cc>B</div>
+<div class=cc>A</div>
+<div class=cc>B</div>
+<div class=cc>B</div>
+<div class=cc>A</div>
+<div class=cc>B</div>
+<div class=cc>A</div>
+<div class=cc>B</div>
+ <div class=cc>A</div>
+<div class=cc>B</div><div class=cc>B</div>
+<div class=cc>A</div>
+<div class=cc>B</div>
+<div class=cc>A</div>
+<div class=cc>B</div>
+<div class=cc>A</div>
+<div class=cc>B</div><div class=cc>B</div>
+<div class=cc>A</div>
+<div class=cc>B</div>
+<div class=cc>A</div>
+<div class=cc>B</div>
+<div class=cc>A</div>
+<div class=cc>B</div> -->
+
+
+
+</div>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		button
+		{
+			background-color: lightgrey;
+			width:400px;
+			box-shadow: 2px 2px 2px red;
+			margin-left: 200px;
+			display: block;
+			margin-top: 20px;
+
+		}
+
+	</style>
+</head>
+<body>
+	<h2>User Defined Functions</h2>
+	<pre>
+		User Defined Function-Created by user on requirement but canbe called many times.
+UDF types-
+1)Function without parameter and no return
+2)Function Without parameter and with return
+3)Function with parameter and no return
+4)Function With parameter and with return
+5)Function without name -Annonymous Function-A JavaScript function can also be defined using an expression.A function expression can be stored in a variable.
+	</pre>
+	<p>A function can be stored in a variable</p>
+<p id="demo"></p>
+<!-- calling of function at any event -->
+<button onclick="fn1()">Function Without Argument and no return</button>
+<button onclick="var a=fn2();document.getElementById('demo').innerHTML=a">Function Without Argument and with return</button>
+<button onclick="fn3(x,y)">Function With Argument and no return</button>
+
+<!-- <button onclick="fn3(45,80)">Function With Argument and no return</button> -->
+<!-- <button onclick="var b=fn4(30,40);document.write('Sum of Numbers:',b)">Function With Argument and with return</button> -->
+<button onclick="fn4(x,y);document.write('Sum of Numbers:',z)">Function With Argument and with return</button>
+
+
+<!-- Annonymous Function (function without name is called annonymous function-->
+<!-- <button onclick="var x = function (a, b) {return a * b};
+document.getElementById('demo').innerHTML = x(10,3);">Annonymous Function</button> -->
+<button onclick="var x = function (a, b) {return a * b};
+document.getElementById('demo').innerHTML = x(a,b);">Annonymous Function</button>
+<script type="text/javascript">
+	//function defination
+var x,y;								//Global variables
+	x=parseInt(prompt("Enter number1:"));
+	y=parseInt(prompt("Enter number2:"));
+
+//1)Function without parameter and no return
+
+function fn1()
+{
+	var z;							//local variable
+	z=x+y;
+	document.getElementById('demo').innerHTML=z;
+
+}	
+//2)Function without parameter and with return
+function fn2()
+{
+	var z;
+	
+	z=x+y;
+	return z;
+
+}	
+//3)Function with parameter and no return-always pass values at time of calling
+function fn3(n1,n2)
+{
+	var z;
+	
+	z=n1+n2;
+	document.getElementById('demo').innerHTML=z;
+
+}	
+//4)Function with parameter and with return-always pass values at time of calling
+function fn4(x,y)
+{
+	var z;
+		z=x+y;
+	return z;
+	}	
+
+</script>
+</body>
+</html>

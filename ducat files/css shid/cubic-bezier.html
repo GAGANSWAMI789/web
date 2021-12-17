@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition:all 2s;
+/*  A transition effect with variable speed from start to end:*/ 
+ transition-timing-function: cubic-bezier(0.1, 0.2, 1.0, 0.1);
+/* transition-timing-function: ease-out;
+*/}
+
+div:hover {
+  width:500px;
+  background-color: pink;
+}
+</style>
+</head>
+<body>
+<hr>
+<h1>The cubic-bezier() function </h1>
+<h2>defines a Cubic Bezier curve.</h2>
+
+<pre>
+
+A Cubic Bezier curve is defined by four points P0, P1, P2, and P3. P0 and P3 are the start and the end of the curve and, in CSS these points are fixed as the coordinates are ratios. P0 is (0, 0) and represents the initial time and the initial state, P3 is (1, 1) and represents the final time and the final state.
+
+The cubic-bezier() function can be used with the animation-timing-function property and the transition-timing-function property. 
+x1,y1,x2,y2	Required. Numeric values. x1 and x2 must be a number from 0 to 1
+
+
+	</pre>
+
+<p>Hover over the div element below, to see the transition effect.</p>
+
+<div></div>
+
+<p><b>Note:</b> This example does not work in Internet Explorer 9 and earlier versions.</p>
+
+</body>
+</html>

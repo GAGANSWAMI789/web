@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<head>
+
+</head>
+
+<body style="background-color: rgb(125, 202, 115);">
+<h1></h1>
+<table border=2 width=800 bgcolor=#8cab94 background="#8cab94" cellpadding=30 cellspacing=20 align=center>
+    <caption style="font-size: x-large;">calculate Total numbers and Percentage</caption>
+<thead>
+    <tr>
+        <th>Employee Name</th>
+        <th>Post</th>
+        <th>salary</th>
+        <th>HRA</th>
+        <th>DA</th>
+        <th>Total</th>
+        
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td id="nn"></td>
+        <td id="mm"></td>
+        <td id="pp"></td>
+        <td id="cc"></td>
+        <td id="dd"></td>
+        <td id="tt"></td>
+        
+    </tr>
+</tbody>
+</table>
+
+
+
+<script>
+    var t1,t2,t3,t4,g;
+    t1=prompt("Enter Employee Name");
+    t2=prompt("post");
+    t3=eval(prompt("salary"));
+    
+    let x=t3;
+    let y=12/100;
+    let z=x*y;
+    let g=z;
+        if(g>=80)
+        {
+            document.write("<br> A");
+        }
+        else if(g>=60)
+        {
+        document.write("<br> B");	
+        }
+        else if(g>=40)
+        {
+        document.write("<br> C");	
+        }
+        else
+        {
+	    document.write("<br> Fail");
+
+}
+
+
+    document.getElementById("nn").innerHTML=t1;
+    document.getElementById("mm").innerHTML=t2;
+    document.getElementById("pp").innerHTML=t3;
+    document.getElementById("cc").innerHTML=t4;
+    document.getElementById('tt').innerHTML=t2+t3+t4;
+    document.getElementById("pr").innerHTML = z;
+    document.getElementById("gd").innerHTML = g;
+    
+    
+
+
+</script>
+
+
+
+
+</body>
+</html>

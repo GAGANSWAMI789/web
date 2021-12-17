@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+div
+{
+	background-color: yellow;
+	width:500px;
+	
+	border:1px red solid;
+	text-align: center;
+	font-weight: bold;
+	font-size:20px;
+	margin:10px;
+
+}
+.st
+{
+	position: static;
+	top:100px;
+	left:200px;
+	text-align: left;
+}
+.rr
+{
+	position:relative;
+	top:30px;
+	left:200px;
+	background-color: aqua;
+}
+.aa
+{
+	position:absolute;
+	top:80px;
+	left:200px;
+	background-color:pink;
+}
+.ff
+{
+	position:fixed;
+	top:0;
+	left:100px;
+	background-color:lightgrey;
+}
+.ss
+{
+	position:sticky;
+	top:0;
+	left:300px;
+	background-color:teal;
+}
+
+	</style>
+</head>
+<body>
+<h2 align=center> Position - Absolute, Relative, Fixed, Static(by default), Sticky</h2>
+<h3 align=center>Top, Bottom, Left, Right, Z-index </h3>
+<div class=st>
+		Position:Static
+	<!-- 	by default position value is static and it does not responds to left,right,top,bottom etc. -->
+
+</div>
+<h2> I am heading2</h2>
+<div class=rr>
+	Position:Relative
+ <!-- It will responds to its previous element, means give space from top,left etc. from just previous element -->
+</div>
+<div class=aa>
+	Position:Absolute
+	<!--  It will responds to its parent element, means give space from top,left etc. from either body's corner or from its parent element if it has -->
+</div>
+<div class=ff>
+	Position:Fixed
+	<!--  It will responds to its parent element, means give space from top,left etc. from either body's corner or from its parent element if it has so it is same as absolute but the difference is it will be fixed when screen scrolls-->
+</div>
+
+<ol>
+	<li>static: every element has a static position by default, so the element will stick to the normal page flow. So if there is a left/right/top/bottom/z-index set then there will be no effect on that element.</li>
+	<li>relative: an element’s original position remains in the flow of the document, just like the static value. But now left/right/top/bottom/z-index will work. The positional properties “nudge” the element from the original position in that direction. count from previous element</li>
+	<li>absolute: the element is removed from the flow of the document and other elements will behave as if it’s not even there while all the other positional properties will work on it. count from corner of the screen</li>
+	<li>fixed: the element is removed from the flow of the document like absolutely positioned elements. In fact they behave almost the same, only fixed positioned elements are always relative to the document, not any particular parent, and are unaffected by scrolling.</li>
+	<li>sticky (experimental): the element is treated like a relative value until the scroll location of the viewport reaches a specified threshold, at which point the element takes a fixed position where it is told to stick.</li>
+	<li>inherit: the position value doesn’t cascade, so this can be used to specifically force it to, and inherit the positioning value from its parent.</li>
+</ol>
+<div class=ss>
+	Position:Sticky
+	<!-- 	just like fixed it will give space from left,top etc. from its parent or body's corner  but it will remains fixed when screen scrolls after it -->
+</div>
+<p>
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dr incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dr incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dr incididuninim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dr incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dr incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dr incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,inim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dr incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dr incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dr incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,inim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dr incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dr incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dr incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,inim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dr incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dr incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dr incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,inim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dr incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dr incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dr incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,inim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dr incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dr incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dr incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,t ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dr incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dr incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</body>
+</html>

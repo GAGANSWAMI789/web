@@ -1,0 +1,82 @@
+
+
+
+<!-- The filter property defines visual effects (like blur and saturation) to an element (often <img>)
+	filter: none | blur() | brightness() | contrast() | drop-shadow() | grayscale() | hue-rotate() | invert() | opacity() | saturate() | sepia() | url(); -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/* all filters in css3 are-
+filter: none | blur() | brightness() | contrast() | drop-shadow() | grayscale() | hue-rotate() | invert() | opacity() | saturate() | sepia() | url();*/
+img:hover {
+
+  filter: grayscale(100%); 
+  filter: brightness(200%);/*0% will make the image completely black.100% (1) is default and represents the original image.Values over 100% will provide brighter results.*/
+   filter: contrast(200%);
+   filter:blur(10px);
+
+   filter:drop-shadow(10px 8px 10px red);
+   filter:hue-rotate(140deg); /* max is 360 deg*/
+   filter:invert(100%);/*Inverts the samples in the image.
+
+0% (0) is default and represents the original image.
+100% will make the image completely inverted.*/
+filter:opacity(30%);
+filter:saturate(7);/*0% (0) will make the image completely un-saturated.
+100% is default and represents the original image.
+Values over 100% provides super-saturated results.
+
+Note: Negative values are not allowed.*/
+filter:sepia(100%);
+/*The url() function takes the location of an XML file that specifies an SVG filter, and may include an anchor to a specific filter element. Example:
+
+filter: url(svg-url#element-id)*/
+filter:hue-rotate(240deg); 
+filter:hue-rotate(240deg) drop-shadow(10px 20px 30px red);
+filter:invert();
+filter:none;
+}
+img
+{
+  filter:grayscale();
+}
+
+
+
+
+img.background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+ 
+  filter: blur(65px);
+}
+
+img.circle {
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+  height: auto;
+  max-width: 60%;
+}
+</style>
+</style>
+</head>
+<body>
+
+<h1>The filter Property</h1>
+
+<p>Convert the image to grayscale:</p>
+
+<img class=circle src="https://m.media-amazon.com/images/I/41nmXekwXJL.jpg" alt="Pineapple" width="900px" height="900px">
+<img class=background src="https://m.media-amazon.com/images/I/41nmXekwXJL.jpg" alt="Pineapple" width="900px" height="900px">
+
+<p><strong>Note:</strong> The filter property is not supported in Internet Explorer, Edge 12, or Safari 5.1 and earlier.</p>
+
+</body>
+</html>

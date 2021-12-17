@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		button
+		{
+			width:300px;
+			height:70px;
+			border:1px red solid;
+			background-color: lightgrey;
+			margin-top:10px;
+			display:block;
+
+		}
+		button:hover
+		{
+			box-shadow: 2px 2px 2px yellow;
+
+		}
+
+
+
+
+	</style>
+</head>
+<body>
+	<pre>
+Function-
+1)Library Function
+2)User Defined Function
+	a)Function without parameter(arguments) and no return
+	b)Function without parameter(arguments) but  return value
+	c)Function with parameter(arguments) and no return
+	d)Function with parameter(arguments) and  return value
+	e)Function without name -Annonymous Function-A JavaScript function can also be defined using an expression.A function expression can be stored in a variable.
+	
+
+</pre>
+<hr>
+
+<pre>
+Assignment- Create buttons to take input Name, Age and Salary of a person from user and display all information in a table. Do this by UDF
+</pre>
+
+
+
+
+<br>
+<br>
+<hr>
+<button onclick="add()">Function without parameter(arguments) and no return</button>
+<button onclick="var z=subtract();document.write('<br> Subtraction:',z)">Function without parameter(arguments) and  return</button>
+<!-- <button onclick="subtract();document.write('<br> Subtraction:',c)">Function without parameter(arguments) and  return</button> -->
+
+
+<button onclick="multiply(a,b)">Function with parameter(arguments) and no return</button>
+
+<button onclick="divide(a,b);document.write('<br>Division:',c);
+">Function with parameter(arguments) and  return</button>
+
+<button onclick="var z=function(a,b){return a%b};document.write('<br>Remainder:',z(66,10))">Annonymous Function(Calculate Remainder)</button>
+
+<button onclick="var z=function(){alert('i am Annonymous')};z();">Annonymous Function(without name)</button>
+
+<script type="text/javascript">
+var a,b,c;						//global variable---available in all functions
+a=parseInt(prompt("Enter first Number:"));
+b=parseInt(prompt("Enter Second Number:"));
+// Function without parameter(arguments) and no return
+function add()
+{
+// var a,b,c;						//local variable-can be used only in its own function
+// a=parseInt(prompt("Enter first Number:"));
+// b=parseInt(prompt("Enter Second Number:"));
+
+c=a+b;
+
+document.write("<br>addition:",c);
+}
+// Function without parameter(arguments) and  return
+function subtract()
+{
+
+c=a-b;
+return c;
+
+}
+
+// Function with parameter(arguments) but no  return---always pass values at time of calling
+function multiply(a,b)
+{
+
+c=a*b;
+document.write("<br>Multiply:",c);
+
+
+}
+// Function with parameter(arguments) with return value--always pass values at time of calling
+function divide(a,b)
+{
+
+c=a/b;
+return c;
+
+}
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+</body>
+</html>

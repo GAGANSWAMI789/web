@@ -1,0 +1,55 @@
+<!-- <!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hide & Show</title>
+</head>
+<body>
+<form>
+    Password:
+    <input type="password" id="aa">
+    <button onclick="theora()">click</button>
+</form>
+<script>
+    function theora()
+    {
+        if(bb==hide)
+        {
+            // document.getElementById("aa").innerHTML
+            // console.log(aa)
+        }
+    }
+</script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<b><p>Click on the checkbox to show
+		or hide password: </p></b>
+
+<b>Password</b>: <input type="password"
+	 id="aa">
+
+     <button onclick="theora()">click</button>
+
+<input type="checkbox" onclick="Theora()">
+	<b>Show Password</b>
+
+	<script>
+	// Change the type of input to password or text
+		function Theora() {
+			var x = document.getElementById("aa");
+			if (x.type === "password") {
+				x.type = "text";
+			}
+			else {
+				x.type = "password";
+			}
+		}
+</script>
+</body>
+</html>

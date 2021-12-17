@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<pre>
+JS is object based script language.
+Every object has
+1)Property
+2)Method(function)
+
+eg. document- owner object
+Property of document object= innerHTML  etc.
+Method of document object=getElementById(), write()  etc.
+
+Function- A set of statements to do a particular task is known as function, which can be called by its
+ name. function to be executed must be invoked(called). function can be invoked multiple times.
+Function types-
+1)Library Function(readymade function)-
+	a) Math Methods(Number)
+	b) String Methods(Text)
+	c) Array Methods(Array)
+	d) Date Methods
+		etc.
+
+
+
+2)User Defined Functions(UDF)
+
+</pre>
+<h2 align=center> Date Methods(Function)</h2>
+<h3  align=center>get and set date methods</h3>
+get methods- to display any information from date methods
+set methods - to change any information from date methods
+<script type="text/javascript">
+// Prior to 1972, this time was called Greenwich Mean Time (GMT) but is now referred to as Coordinated
+// Universal Time or Universal Time Coordinated (UTC). It is a coordinated time scale, maintained by 
+//the Bureau International des Poids et Mesures (BIPM). It is also known as "Z time" or "Zulu Time".
+	
+
+
+// var a= new Date(prompt("enter date of birth:"));
+// alert(a.getFullYear());
+//-----------------------------
+//New keyword in JavaScript is used to create an instance of an object that has a constructor function.
+// On calling the constructor function with ‘new’ operator, A new empty object is created.
+
+
+//-------------------------
+var x=20;
+document.write("<br>type of x:",typeof(x));
+var y=new Number(20);
+document.write("<br>type of y:",typeof(y));
+var x="hello";
+document.write("<br>type of x:",typeof(x));
+var y=new String("hello");
+document.write("<br>type of y:",typeof(y));
+
+
+
+var d=new Date();   //current system date
+
+document.write("type of variable d:",typeof(d));
+document.write("<br>","current full date:",d);
+
+document.write("<hr>");
+
+document.write("<br>","current Month:",d.getUTCMonth()+1);
+document.write("<br>","date of current date:",d.getDate());
+// Javascript date getMonth() method returns the month in the specified date according to local time. The value returned by getMonth() is an integer between 0 and 11. 0 corresponds to January, 1 to February, and so on.
+document.write("<br>","Month of current date:",d.getMonth()+1);
+document.write("<br>","getFullYear() : " , d.getFullYear());
+// to assign particular date
+var dt = new Date("May 31,2021");
+
+document.write("<br>","getFullYear() : " , dt.getFullYear());
+var age=d.getFullYear()-dt.getFullYear();
+document.write("<br>","age is:",age);
+
+
+
+document.write("<hr>");
+//getday() will return number of week ...count from Sunday and digit is 0
+document.write("<br>","day of current date:",d.getDay());
+document.write("<br>","day of particular date:",dt.getDay());
+document.write("<br>","Date() : " , dt);
+
+ document.write("<br>","getDate() : " , dt.getDate());
+ document.write("<br>","getMonth() : " , dt.getMonth()+1);
+ document.write("<br>","getFullYear() : " , dt.getFullYear());
+ document.write("<br>","getHours() : " , d.getHours());
+ document.write("<br>","getMinutes() : " , d.getMinutes());
+ //1 second=1000 millisecond
+ document.write("<br>","getMilliseconds() : " , d.getMilliseconds());
+ document.write("<br>","getSeconds() : " , d.getSeconds());
+ // set methods used to change particular part value of date
+ dt.setFullYear(2006);
+ document.write("<br>","use of setyear:", dt);
+dt.setHours(12);
+ document.write("<br>","use of sethours:", dt);
+dt.setMonth(8);
+document.write("<br>","change month of date:",dt);
+
+
+</script>
+
+
+
+
+</body>
+</html>

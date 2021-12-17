@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>salary structure</title>
+</head>
+<body>
+<table border="1" cellpadding="5" align="center">
+	<tr>
+		<th rowspan="2">Employer's Name</th>
+		<th rowspan="2">Post</th>
+		<th colspan="3">Income</th>
+		<th rowspan="2">Total Income</th>
+	</tr>
+	<th>Salary</th>
+	<th>HRA</th>
+	<th>DA</th>
+	<tr>
+		<td id="a"></td>
+		<td id="b"></td>
+		<td id="c"></td>
+		<td id="d"></td>
+		<td id="e"></td>
+		<td id="f"></td>
+	</tr>
+
+
+</table>
+<script type="text/javascript">
+	var t1,t2,t3,t4,t5,t6;
+	t1=prompt("Employer's Name");
+	t2=prompt("Employer's Post");
+	t3=parseInt(prompt("Employer's Salary"));
+
+document.getElementById("a").innerHTML=t1;
+document.getElementById("b").innerHTML=t2;
+document.getElementById("c").innerHTML=t3;
+if (t3<=25000) {
+	t4=(t3*12)/100;
+}
+else{
+	t4=(t3*7)/100;
+}
+document.getElementById("d").innerHTML=t4;
+if (t3<=25000) {
+	t5=(t3*13)/100;
+
+}
+else{
+	t5=(t3*8)/100;
+}
+document.getElementById("e").innerHTML=t5;
+document.getElementById("f").innerHTML=t3+t4+t5;
+</script>
+
+</body>
+</html>

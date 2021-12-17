@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		<
+
+	</title>
+
+
+
+	<style>
+
+
+
+/*browser name----in front of css property
+*//*chrome-webkit
+opera,safari-o
+mozilla-moz
+internet explorer-ms*/
+*
+	{
+			margin: 0 auto;
+	}
+
+h1
+			{
+			  box-shadow: inset 0 0 7px  green;
+			  color:red;
+			  border:2px blue solid;
+			  /*width:400px;*/    /*fixed width not changed by width of device means mobile*/
+			  width: calc(100% - 150px);
+			  background-color: pink;
+			  text-align: center;
+			}
+
+
+		p::-webkit-scrollbar{
+  width: 10px;
+}
+	
+
+p::-webkit-scrollbar-track {
+/*display shadow inner side*/
+  box-shadow: inset 2px 2px 6px blue;          
+  background-color: yellow;
+}
+ 
+p::-webkit-scrollbar-thumb {
+  background-color: red;
+  /*The CSS border property is used to define the border properties for an element. It is a shorthand for border-width, border-style and border-color. Borders for individual sides can be styled and a border-radius can also be specified.
+
+On the other hand, the CSS outline doesn’t take up space and is displayed around the border if set. It supports offset. Further, we can’t specify if individual sides should have an outline or not.*/
+  outline: 1px solid slategrey;
+  border:2px green solid;
+  height:50px;
+   border-radius: 20px;
+}
+
+p::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+p
+{
+	width:300px;
+	margin:0 auto;
+	height: 300px;
+	border:2px red solid;
+	overflow: scroll;
+	
+}
+</style>
+</head>
+<body>
+	
+
+	<h1>Scrollbars</h1>
+
+
+<p>
+ ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esseuis aute irure dolor in reprehenderit in voluptate velit esseuis aute irure dolor in reprehenderit in voluptate velit esseuis aute irure dolor in reprehenderit in voluptate velit esseuis aute irure dolor in reprehenderit in voluptate velit esseuis aute irure dolor in reprehenderit in voluptate velit esseuis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariat in reprehenderit in voluptate velit esseuis aute irure dolor in reprehenderit in voluptate velit esseuis aute irure dolor in reprehenderit in voluptate velit esseuis aute irure dolor in reprehenderit in voluptate velit esseuis aute irure dolor in reprehenderit in voluptate velit esseuis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariat in reprehenderit in voluptate velit esseuis aute irure dolor in reprehenderit in voluptate velit esseuis aute irure dolor in reprehenderit in voluptate velit esseuis aute irure dolor in reprehenderit in voluptate velit esseuis aute irure dolor in reprehenderit in voluptate velit esseuis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</p>
+
+
+
+
+
+
+
+
+
+</body>
+</html>

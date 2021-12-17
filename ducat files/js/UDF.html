@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+		<style>
+button
+{
+background-color:lightgrey;
+width:200px;
+margin-left:50px;
+}
+
+button:hover
+{
+	box-shadow: 2px 2px 2px red;
+
+}
+
+	</style>
+</head>
+<body>
+<h2 align=center> User Defined Function</h2>
+<h3 align=center>UDF created by user and can be used repeatedly whenever required</h3>
+	<table border=2 width=50% align=center>
+	<tr>
+<th>Name</th>
+<th>Age</th>
+<th>Salary</th>
+
+</tr>
+<tr id="hello">
+<td id=name1></td>
+<td id=aaa></td>
+<td id =ss></td>
+</tr>
+</table>
+<!-- User defined function must be invoked(call) by name at any event . -->
+
+<br><br>
+
+<button onclick="ducat();"> Input Data in Table</button>
+<button onclick="fn2()"> Information in Popup</button>
+
+<!--You can call more than one function at any event-->
+<button onclick="ducat();fn2()">Click to Add Data in table</button>
+
+<script type="text/javascript">
+	//user defined function
+	var n=prompt("Enter name:");			//global variable
+	var a=prompt("Enter Age: ");
+function ducat()
+{
+	var s=prompt("Enter Salary: ");				//local variable
+var x=document.getElementById("name1");
+x.innerHTML=n;
+var y=document.getElementById("aaa");
+y.innerHTML=a;
+var sal=document.getElementById("ss");
+sal.innerHTML=s;
+
+// to apply CSS on elements by JS
+
+// x.style.backgroundColor="yellow";
+// y.style.backgroundColor="yellow";
+z=document.getElementById("hello");
+
+z.style.backgroundColor="yellow";
+z.style.textAlign="center";
+z.style.color="blue";
+}
+function fn2()
+{
+	alert("hi......i am second function");
+	alert("name:"+n);
+	alert("age:"+a);
+	alert("Salary:"+s);  //s is local variable so can't be called
+}
+
+
+
+
+</script>
+
+</body>
+</html>

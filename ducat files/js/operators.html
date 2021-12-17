@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	
+	
+
+<h1 align=center> Types of operators</h1>
+
+	<pre>
+8+2
++ operator
+8,2   operand
+Types of operators-
+	1)Arithmetic Operator- +, -, *, /, %(ramainder after division), **(power)
+	2)Logical operator- &&(and)  ||(or)  !(not)
+	
+	3)JavaScript Assignment Operators
+
+Operator			Description					Example
+=				Assign 10+10 = 20
++=				Add and assign	var a=10; a+=20; Now a = 30
+-=	Subtract and assign	var a=20; a-=10; Now a = 10
+*=	Multiply and assign	var a=10; a*=20; Now a = 200
+/=	Divide and assign	var a=10; a/=2; Now a = 5
+%=	Modulus(remainder) and assign	var a=12; a%=2; Now a = 2
+
+4)Comparision Operators- ==     ===    >   <  >=  <= 
+	 !=	Not equal to	10!=20 = true
+	!==	Not Identical	20!==20 = false
+5)Post Increment/Post decrement   eg. a=10  a++   a--
+6)Pre Decrement/Pre Increment    eg. a=10   ++a   --a
+7) Ternary operator-
+		
+	(?:)	Conditional Ternary operator-one line statement- returns value based on the condition. It is like if-else.
+
+	(condition)?true :false 
+
+Note:=>	Following operators will be discussed later
+	,			Comma Operator allows multiple expressions to be evaluated as single statement.
+	delete		Delete Operator deletes a property from the object.
+	in			In Operator checks if object has the given property
+	instanceof	checks if the object is an instance of given type
+	new			creates an instance (object)
+	typeof		checks the type of object.
+	void		it discards the expression's return value.
+	yield		checks what is returned in a generator by the generator's iterator.
+
+</pre>
+
+<script type="text/javascript">
+var x,y,a,b;     			//declaration
+
+document.write("<hr> <h1> use of operators</h1>");
+x=40;
+y=3;
+a=80;
+b=40;
+document.write("<br>value of a:",a);
+
+a=b;		//assignment value of b into a
+document.write("<br>value of a:",a);
+document.write("<br>remainder:",x%y);
+	document.write("<br>Power:",x**y);
+	document.write("<br>And  &&: ",x>60 && y>2);
+
+	document.write("<br>Or  ||: ",x>60 || y>2);
+		document.write("<br>Not  !: ",!x<60);
+		x=40;
+// == comaprision of values only
+
+// === comaprision of values and data type
+a=40;   //number
+b="40";  //string
+document.write("<br>",a==b);  // comparing value only
+document.write("<br>",a===b); // comparing value and datatype both
+a=80;
+a=a+2;
+a+=2;
+
+a=10;
+a+=30;  // same as a=a+30
+document.write("<br>value of a after addition:",a);
+a-=20;  // same as a=a-20
+document.write("<br>value of a after subtraction:",a);
+a*=3;  // same as a=a*3
+document.write("<br>value of a after multiplication:",a);
+a/=2;  // same as a=a/2
+document.write("<br>value of a after division:",a);
+a=2;
+a**=5;  // same as a=a*a*a  calculate power
+document.write("<br>value of a after power:",a);
+a=78;
+a%=4;  // same as a=a%4   gives remainder means 2
+document.write("<br>value of a after remainder:",a);
+a=10;
+//pre increment
+document.write("<br>value of a (pre increment):",++a);
+a=50;
+//post increment same as for decrement
+document.write("<br>value of a (post increment):",a++);
+document.write("<br>value of a (again above statement):",a);
+// ternary operator-same as if else
+// condition? true case:false case
+var x = 10;
+var y = 20;
+
+
+// compare x and y and display greatest number
+
+var z=(x > y) ? "X is greatr" : "Y is greater"; 
+ document.write("<br>Value of z=:",z);	
+
+y=300;
+
+var z=y>200?"good":"bad";
+ document.write("<br>Value of z=:",z);	
+
+// The delete operator removes a given property from an object. On successful deletion, it will return true , else false will be returned.
+// z is an object
+z={
+	name:"Deepa",			//property of z object
+	ag:27,					//property of z object
+	post:"accountant",		//property of z object
+	sal:34000,				//property of z object
+	work:function(){
+	return "only works in sales department";//work is method of z object	
+	}					
+};
+// without name function is called annonymous fn.
+document.write("<br>data type of z:",typeof(z));
+
+document.write("<br>Name of Employee:",z.name,z.ag,z.post);
+delete z.post;
+document.write("<br>Name of Employee:",z.name,z.ag,z.post);
+
+document.write("<br>Work of Employee:",z.work());
+
+
+
+
+
+</script>
+
+</body>
+</html>

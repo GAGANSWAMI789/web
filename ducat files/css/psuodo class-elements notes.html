@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+
+	*
+	{
+		margin:0 auto;
+	}
+	:root
+{
+	background-color:lightgrey;
+}
+/*body
+{
+	background-color: #ffff00 ;
+}
+*/
+input:enabled
+{
+	border:2px solid aqua;
+}
+input:disabled
+{
+	border:2px solid green;
+}
+input:required
+{
+	border:1px solid red;
+	background-color: lightgrey;
+}
+/*to target any element having specified attribute
+*/input[name="abc"],input[type="password"]
+{
+	background-color:lightgrey;
+}
+
+
+/*input:empty
+{
+	background-color:red;
+}*/
+input:valid
+{
+	background-color:green;
+}
+
+input:invalid
+{
+	background-color:red;
+}
+
+input:in-range
+{
+	background-color:green;
+}
+input:out-of-range
+{
+	background-color:red;
+}
+
+span
+{
+	background-color:red;
+	padding:5px;
+	display: none;
+}
+
+input:checked + span
+{
+	display: inline-block;
+	width:50px;
+	height: 100px;
+}
+
+
+.abc
+{
+	width:1200px;
+	height:500px;
+	background-image:url(image/2.jpg);
+	background-size:100% 100%;
+	
+	clip-path:polygon(0px 0px,700px 0px,1200px 400px,600px 500px,0px 400px,0px 0px);
+
+}
+.abc>section
+{
+	width:1200px;
+	height:500px;
+	background-color:rgba(0,0,0,0.8);
+	color:white;
+}
+
+
+
+fieldset
+{
+
+background-color: lightgrey;
+width:300px;
+border:5px red solid;
+}
+
+label
+{
+	color:blue;
+	font-size:20px;
+}
+input[type="text"]:hover
+{
+background-color: pink;
+border:1px grey solid;
+box-shadow: 2px 2px 2px red;
+}
+
+p[align=center]:hover
+{
+	background-color: aqua;
+}
+a
+{
+	display: block;
+}
+
+/*order of a :link,a:visited,a:hover,a:active
+*/
+
+
+
+a:link
+{
+color:blue;
+font-size: 30px;
+background-color: grey;
+}
+a:visited
+{
+color:green;
+background-color: salmon;
+}
+a:hover
+{
+color:red;
+background-color: yellow;
+}
+a:active
+{
+color:black;
+background-color: aqua;
+}
+
+div
+{
+	width:300px;
+}
+div p:first-child
+{
+	border:1px red solid;
+	font-family:algerian;
+}
+div p:last-child
+{
+	border:1px green solid;
+
+	font-family:jokerman;
+}
+div p:nth-child(3)
+{
+	text-decoration: line-through;
+	font-family:jokerman;
+}
+
+input
+{
+
+margin-left: 200px;
+
+
+}
+
+
+
+input[type="text"]:disabled
+{
+background-color: teal;
+}
+input[type="checkbox"]:checked
+{
+box-shadow: 2px 2px 2px red;
+width:30px;
+font-size: 20px;
+}
+input:in-range
+{
+	background-color: #b39546;
+}
+
+::selection
+{
+	background-color: red;
+	
+	color:white;
+	
+}
+::placeholder
+{
+	color:purple;
+}
+
+
+
+	</style>
+
+</head>
+<body>
+	<h5> Use of pseudo-class and pseudocode-elements</h5>
+	In CSS, a pseudo-class selector targets elements depending on their state rather than on information from the document tree. For example, the selector a:visited applies styles only to links that the user has already followed.
+	A CSS pseudo-class is a keyword added to a selector that specifies a special state of the selected element(s)
+
+A CSS pseudo-element is used to style specified parts of an element.
+
+For example, it can be used to:
+
+Style the first letter, or line, of an element
+Insert content before, or after, the content of an element
+
+	<h3>All CSS Pseudo Classes-State of Element</h3>
+<pre>
+ :active	a:active	Selects the active link
+:checked	input:checked	Selects every checked <input> element
+:disabled	input:disabled	Selects every disabled <input> element
+:empty		p:empty	Selects every <p> element that has no children
+:enabled	input:enabled	Selects every enabled <input> element
+:first-child	p:first-child	Selects every <p> elements that is the first child of its parent
+:first-of-type	p:first-of-type	Selects every <p> element that is the first <p> element of its parent
+:focus	input:focus	Selects the <input> element that has focus
+:hover	a:hover	Selects links on mouse over
+:in-range	input:in-range	Selects <input> elements with a value within a specified range
+:invalid	input:invalid	Selects all <input> elements with an invalid value
+:lang(language)	p:lang(it)	Selects every <p> element with a lang attribute value starting with "it"
+:last-child	p:last-child	Selects every <p> elements that is the last child of its parent
+:last-of-type	p:last-of-type	Selects every <p> element that is the last <p> element of its parent
+:link	a:link	Selects all unvisited links
+:not(selector)	:not(p)	Selects every element that is not a <p> element
+:nth-child(n)	p:nth-child(2)	Selects every <p> element that is the second child of its parent
+:nth-last-child(n)	p:nth-last-child(2)	Selects every <p> element that is the second child of its parent, counting from the last child
+:nth-last-of-type(n)	p:nth-last-of-type(2)	Selects every <p> element that is the second <p> element of its parent, counting from the last child
+:nth-of-type(n)	p:nth-of-type(2)	Selects every <p> element that is the second <p> element of its parent
+:only-of-type	p:only-of-type	Selects every <p> element that is the only <p> element of its parent
+:only-child	p:only-child	Selects every <p> element that is the only child of its parent
+:optional	input:optional	Selects <input> elements with no "required" attribute
+:out-of-range	input:out-of-range	Selects <input> elements with a value outside a specified range
+:read-only	input:read-only	Selects <input> elements with a "readonly" attribute specified
+:read-write	input:read-write	Selects <input> elements with no "readonly" attribute
+:required	input:required	Selects <input> elements with a "required" attribute specified
+:root	root	Selects the document's root element
+:target	#news:target	Selects the current active #news element (clicked on a URL containing that anchor name)
+:valid	input:valid	Selects all <input> elements with a valid value
+:visited	a:visited	Selects all visited links</h6>
+
+</pre>
+
+<h3>All CSS Pseudo Elements(part of element)</h3>
+
+
+<pre>
+Selector	Example		description
+::after		p::after	Insert content after every <p> element
+::before	p::before	Insert content before every <p> element
+::first-letter	p::first-letter	Selects the first letter of every <p> element
+::first-line	p::first-line	Selects the first line of every <p> element
+::selection	p::selection	Selects the portion of an element that is selected by a user 
+
+</pre>
+
+	<h1>Now</h1>
+<p align=right>
+ para1 ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt </p>
+<div>
+<p>welcome</p>
+<p>welcome</p>
+<p>welcome</p>
+
+<p>welcome</p><p>welcome</p>
+</div>
+<br><p align=center>the qyuick brown fox jumpe ovre the littlw lazy dog. 
+	i is doing css.
+	ollit anim id est laborum.
+</p>
+<p>welcome</p>
+<div>
+	<a href="koala.jpg"> Click me</a>
+</div>
+<form>
+	<fieldset>
+<label>Name:</label><input type="text" required placeholder="enter name here" name="abc"><br>
+<label>Password:</label><input type="password"  required><br>
+<label>Address:</label><input type="text" value="noida" disabled><br>
+<label>course:</label><input type="text" readonly><br>
+
+<label>Age:</label><input type="number" min=20 max=60 step=2 required>
+<br>File:<input type="file" ><br>
+<label>Enter comments:</label><textarea placeholder="write here"></textarea>
+<br>
+<label>Male</label><input type="radio" name="r1">
+<label>Female</label><input type="radio" name="r1" checked>
+<br>
+<label>BA</label><input type="checkbox" name="c1">
+<label>MBA</label><input type="checkbox" name="c2" checked>
+<br>
+
+<label>Fees:</label><input type="number" min=200 max=1000>
+<label>Click me:</label><input type="checkbox">
+<span>the quick brown fox jumps over the little lzy dog</span>
+
+<div class="abc">
+	<section>
+		trying for clip-path web design-aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui offi
+	</section>
+
+</div>
+</fieldset>
+<p align=center>para2 ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</p>
+
+<a href="icons.html"> Click me</a>
+<a href="icons.html"> Click me</a>
+
+<a href="icons.html"> Click me</a>
+
+
+</body>
+</html>

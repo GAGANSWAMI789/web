@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<h2 align=center>Nested Loops</h2>
+<pre>
+Q-1. Input any number from user and 
+(a)display its factors
+eg.  12----1,2,3,4,6,12
+(b) check it is prime or not
+(c) Display it's reverse number. 673---376
+(d) check it is palindrome or not    eg. 121
+(e)Armstrong 3 digit eg. 153   =1*1*1+5*5*5+3*3*3
+(f)Perfect Number- eg. 6   sum of factors are same eg. 6=1+2+3
+(g)Sum of digits eg.   435=4+3+5=12
+h)Display factorial of that number.   eg.  5!=5*4*3*2*1=120
+
+____________________________________
+Assignments
+
+1					1					1						*
+2 2					2 3					2 3						* *
+3 3 3 				3 4 5				4 5 6					* * *
+4 4 4 4 			4 5 6 7				7 8 9 10				* * * *
+5 5 5 5 5 			5 6 7 8 9			11 12 13 14 15			* * * * *
+
+A                   	A
+A B                 	B B
+A B C              		C C C
+A B C D            		D D D D
+A B C D E             	E E E E E
+
+____________________________________________________________________
+ASCII= American Standard Code for Information Interchange
+Every character in the keyboard has some ASCII code from 0-255 which is fixed.
+eg.
+A-65				a-97				0-48
+B-66				b-98				1-49
+..					...					...
+Z-91				z-123				9-
+___________________________________________________________________
+	</pre>
+
+
+
+<script type="text/javascript">
+	//0,1,1,2,3,5......100
+
+var a,b,c;
+a=-1;
+b=1;
+c=0;
+while(c<100)
+{
+c=a+b;
+document.write("&emsp;",c);
+a=b;
+b=c;
+
+}
+//input any numebr and print its factors
+var x=parseInt(prompt("Enter Any Number to see factor:"));
+document.write("<br>Factors are:");
+var a=1;			//initialize
+while (a<=x)
+{
+if(x%a==0)
+{
+	document.write("&emsp;",a);
+}
+a=a+1;
+}
+
+//------------------------------------------Nested Loop----------------
+// Print table between 2 numbers input by user.
+
+var n1=parseInt(prompt("Enter start Number to see Table:"));
+var n2=parseInt(prompt("Enter End Number to see Table:"));
+
+while(n1<=n2)
+{
+
+for(var i=1;i<=10;i=i+1)
+{
+document.write("<br>",n1," X ",i," = ",n1*i);
+
+}
+document.write("<hr>");
+n1=n1+1;
+
+}
+
+//--------------------------Pyramids----------------------
+//1
+//1	2
+//1 2	3
+//1 2	3	4
+//1 2	3	4	5
+
+var r,c;
+for(r=1;r<=5;r++)
+{
+for(c=1;c<=r;c++)
+{
+document.write("&emsp;",c);
+
+}
+
+document.write("<br>");
+
+}
+
+
+</script>
+</body>
+</html>

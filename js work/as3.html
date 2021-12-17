@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+    <form>
+
+        <fieldset style="text-align: center; width:30%; margin:0 auto;">
+            <h3 align=center>LOGIN FORM</h3>
+            <label>User Name:</label>
+            &emsp;<input type="text" required id="us"><br><br>
+            <label>Password:</label>
+            &emsp;&ensp;<input type="password" minlength="6", maxlength="10" required id="ps"><br><br>
+            <input type="submit" value="Sign In">&ensp;&emsp;<input type="reset" value="Sign out">
+        </fieldset>
+
+    </form>
+
+    <script >
+        var t1,t2;
+        t1=prompt("Enter Username");
+        t2=prompt("Enter Password");
+//         document.write("<br>Username:",us);
+// document.write("<br>Password:",ps);
+        document.getElementById("us").value=t1;
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		.pp
+		{
+			width:1200px;
+			height:auto;
+			border:2px red solid;
+			background-color: lightgrey;
+			display: grid;
+			/*grid-template-columns: auto auto auto auto;*/      /*equal width of columns	*/
+
+			grid-template-rows: 100px 200px 150px 250px;
+			grid-template-columns: 200px 230px 150px;
+/*to divide  parent width into equal width in specified row or column*/		grid-template-rows: repeat(4,200px);
+			grid-template-columns: repeat(3,150px);
+			/*grid-row-gap: 15px;
+			grid-column-gap: 20px;*/
+			/*shortcut of above*/
+			grid-gap: 20px;
+			/*Horizontal alignment of childs*/
+			justify-content: space-around; /*other values are flex-end,flex-start,space-between,center */
+			/*vertical alignment of childs*/
+			align-content: center;
+
+
+		}
+		.cc
+		{
+			width:auto;
+			height:auto;
+			border:2px red solid;
+			background-color: pink;
+			margin:5px;
+			text-align: center;
+		}
+		.aa
+		{
+			/*grid-column-start: 1;
+	grid-column-end: 3;*/
+/*it will not include end column means merge 1st and 2nd column
+*/	grid-column: 1/4;
+
+			grid-row-start: 2;
+			grid-row-end: 4;
+		}
+
+h3
+{
+	font-size:70px;
+	font-family: arial black;
+
+    /*display image in text but when use background-clip */
+    background-image:url(10.jpg);
+    
+     background-image:url(flower.jpg);
+     background:linear-gradient(red,green,blue,orange);
+	color:transparent;
+	-webkit-background-clip:text;
+}
+
+
+	</style>
+</head>
+<body>
+<h3>Grid Properties(like in excel---multiple rows and columns both)</h3>
+<pre>
+	Flex and grid both help to display webpage as responsive means width wise it will not loose its information . Before css3 when flex and grid were not there then we have to depend on float and position properties to handle the problem and it was not very faithful(in case of mobile, tablets etc. means different size of screen).Advantages of using flex and grid is - now u can ignore float , position etc.
+
+but there is a difference between flex and grid-
+Flex is one dimensional means child elements must be set in either row or column.
+but Grid is two-dimensional means collection of child elements in row and columns. -->
+
+</pre>
+<div class=pp>
+<div class=cc>A</div>
+<div class=cc>B</div>
+<div class="cc aa">C</div>
+<div class=cc>D</div>
+<div class=cc style="grid-row:3/5;height:auto;">E i have mergered row 3-4</div>
+
+<div class=cc>F</div>
+<div class=cc>G</div>
+<div class=cc>H</div>
+<div class=cc>I</div>
+<div class=cc>A</div>
+<div class=cc>B</div>
+<div class=cc>C</div>
+<div class=cc>D</div>
+<div class=cc>E</div>
+<div class=cc>F</div>
+<div class=cc>H</div>
+<!-- <div class=cc>I</div>
+<div class=cc>A</div>
+<div class=cc>B</div>
+<div class=cc>C</div>
+<div class=cc>D</div>
+<div class=cc>E</div>
+<div class=cc>F</div>
+<div class=cc>G</div>
+<div class=cc>H</div>
+<div class=cc>I</div> -->
+</div>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
